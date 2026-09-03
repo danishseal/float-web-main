@@ -1,0 +1,46 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2441_69617)">
+<g clip-path="url(#clip1_2441_69617)">
+<path d="M32 304H0V320H32V304Z" fill="black"></path>
+<path d="M64 288H32V304H64V288H80V256H64V288Z" fill="black"></path>
+<path d="M80 336H64V368H80V336Z" fill="black"></path>
+<path d="M32 320V336H64V320H32Z" fill="black"></path>
+<path d="M80 384V400H96V368H80V384Z" fill="black"></path>
+<path d="M96 368H112V336H96V368Z" fill="black"></path>
+<path d="M112 320V336H144V320H112Z" fill="black"></path>
+<path d="M112 256H96V224H80V256H96V288H112V256Z" fill="black"></path>
+<path d="M144 304V288H112V304H144V320H176V304H144Z" fill="black"></path>
+<path d="M32 80V64H0V80H32Z" fill="black"></path>
+<path d="M48 48H32V64H48V48Z" fill="black"></path>
+<path d="M64 0H48V48H64V0Z" fill="black"></path>
+<path d="M48 80H32V96H48V80Z" fill="black"></path>
+<path d="M48 144H64V96H48V144Z" fill="black"></path>
+<path d="M80 48H64V64H80V48Z" fill="black"></path>
+<path d="M80 80H112V64H80V80H64V96H80V80Z" fill="black"></path>
+<path d="M352 192V208H320V224H288V240H272V272H256V304H272C272 296.023 272 279.971 272 272H288V240H320V224H352V208H400V192C400 192 359.971 192 352 192Z" fill="black"></path>
+<path d="M176 192V176H144V192H176Z" fill="black"></path>
+<path d="M96 192V208H144V192H96Z" fill="black"></path>
+<path d="M144 208V224H176V208H144Z" fill="black"></path>
+<path d="M176 224V240H208V224H176Z" fill="black"></path>
+<path d="M224 240H208V272H224V240Z" fill="black"></path>
+<path d="M240 272H224V304H240V272Z" fill="black"></path>
+<path d="M240 400H256V304H240V400Z" fill="black"></path>
+<path d="M320 192H352V176H320V192Z" fill="black"></path>
+<path d="M320 176V160H288V176H320Z" fill="black"></path>
+<path d="M288 128H272V160H288V128Z" fill="black"></path>
+<path d="M256 128H272V96H256V128Z" fill="black"></path>
+<path d="M240 96H224V128H240V96Z" fill="black"></path>
+<path d="M256 0H240V96H256V0Z" fill="black"></path>
+<path d="M224 144V128H208V160H224V144Z" fill="black"></path>
+<path d="M208 176V160H176V176H208Z" fill="black"></path>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_2441_69617">
+<rect width="400" height="400" fill="white"></rect>
+</clipPath>
+<clipPath id="clip1_2441_69617">
+<rect width="400" height="400" fill="white"></rect>
+</clipPath>
+</defs>
+</svg>
