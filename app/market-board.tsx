@@ -55,7 +55,7 @@ export default function MarketBoard({ view = "markets" }: { view?: "markets" | "
         <MarketChart key={c.ticker} ticker={c.ticker} name={c.name} />
         {c.float && <p className="float-contract">
           <span>{c.float.symbol} on Robinhood Chain 4663</span>
-          <a href={`https://explorer.chain.robinhood.com/address/${c.float.address}`} target="_blank" rel="noreferrer">{c.float.address}</a>
+          <a href={`https://robinhoodchain.blockscout.com/address/${c.float.address}`} target="_blank" rel="noreferrer">{c.float.address}</a>
         </p>}
       </div>}
     </article>; })}</div>

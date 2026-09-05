@@ -45,6 +45,14 @@ export default function HomeShell({ view }: { view?: "markets" | "top200" | "ann
         const marketsText = marketsLabel?.querySelector(".SectionLabel_sectionLabel__text__ZdXcY");
         if (marketsNumber && marketsNumber.textContent !== "03") marketsNumber.textContent = "03";
         if (marketsText && marketsText.textContent !== "Market") marketsText.textContent = "Market";
+        // The nav still says "Top 100" because the label is baked into the
+        // mirrored site's CMS payload, while the page it opens has always been
+        // the top 200 board. Renamed here rather than in the mirror, so
+        // re-exporting that site does not silently bring the old label back.
+        // Leaf nodes only, and the slug stays Top-100 so the route is unchanged.
+        doc.querySelectorAll("a, span, p, li").forEach(el => {
+          if (el.children.length === 0 && el.textContent?.trim() === "Top 100") el.textContent = "Top 200";
+        });
         doc.querySelectorAll(".section--use-cases .UseCasesSection_useCases__indexPrimary__SsC8P").forEach(index => {
           if (index.textContent !== "03.") index.textContent = "03.";
         });
