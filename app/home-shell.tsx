@@ -45,13 +45,29 @@ export default function HomeShell({ view }: { view?: "markets" | "top200" | "ann
         const marketsText = marketsLabel?.querySelector(".SectionLabel_sectionLabel__text__ZdXcY");
         if (marketsNumber && marketsNumber.textContent !== "03") marketsNumber.textContent = "03";
         if (marketsText && marketsText.textContent !== "Market") marketsText.textContent = "Market";
-        // The nav still says "Top 100" because the label is baked into the
-        // mirrored site's CMS payload, while the page it opens has always been
-        // the top 200 board. Renamed here rather than in the mirror, so
-        // re-exporting that site does not silently bring the old label back.
-        // Leaf nodes only, and the slug stays Top-100 so the route is unchanged.
-        doc.querySelectorAll("a, span, p, li").forEach(el => {
-          if (el.children.length === 0 && el.textContent?.trim() === "Top 100") el.textContent = "Top 200";
+        // The nav label is baked into the mirrored site's CMS payload, while
+        // the page it opens has always been the top 200 board. The payload
+        // itself is patched, so this is the belt for a re-export that brings
+        // the old label back.
+        //
+        // It walks TEXT NODES, not elements. The first version of this asked
+        // for a childless element whose whole text was "Top 100" and matched
+        // nothing ever: the anchor reads "1 Top 100" because the key badge is
+        // a child of the same link, so it failed both the exact-text test and
+        // the childless test. Replacing the substring where it actually lives
+        // does not care how the label is wrapped. The slug stays Top-100, so
+        // the route is unchanged; only the space form is touched.
+        const labels = doc.createTreeWalker(doc.body, NodeFilter.SHOW_TEXT);
+        const stale: Text[] = [];
+        for (let node = labels.nextNode(); node; node = labels.nextNode()) {
+          if (node.textContent?.includes("Top 100")) stale.push(node as Text);
+        }
+        // Collected first, then written. Mutating during the walk feeds the
+        // MutationObserver that called this, and the observer calls sync again.
+        // It terminates either way, since nothing contains "Top 100" after the
+        // first pass, but a pass that writes nothing is the cheaper steady state.
+        stale.forEach(node => {
+          node.textContent = node.textContent!.replaceAll("Top 100", "Top 200");
         });
         doc.querySelectorAll(".section--use-cases .UseCasesSection_useCases__indexPrimary__SsC8P").forEach(index => {
           if (index.textContent !== "03.") index.textContent = "03.";
