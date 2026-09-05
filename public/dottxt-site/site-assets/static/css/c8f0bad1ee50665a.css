@@ -11,8 +11,8 @@
 }
 
 .Footer_footer__Ojyf8 .float-footer-columns {
-  flex-direction: row;
-  align-items: flex-end;
-  gap: 3rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4rem;
   grid-column: span 2;
 }
