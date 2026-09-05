@@ -65,9 +65,14 @@ export default function HomeShell({ view }: { view?: "markets" | "top200" | "ann
             twitterColumn.dataset.floatTwitterColumn = "true";
             const item = doc.createElement("li");
             item.className = "Footer_footer__link__yPj39";
-            const twitter = doc.createElement("span");
+            // An anchor, not a span. This was a span, so the one social link
+            // in the footer looked like a button and did nothing when clicked.
+            const twitter = doc.createElement("a");
             twitter.dataset.floatFooterLink = "true";
             twitter.className = "btn btn--secondary text-white";
+            twitter.href = "https://x.com/floatdesks/";
+            twitter.target = "_blank";
+            twitter.rel = "noopener noreferrer";
             twitter.textContent = "Twitter";
             item.append(twitter);
             twitterColumn.append(item);
