@@ -34,6 +34,46 @@ export default function HomeShell({ view }: { view?: "markets" | "top200" | "ann
       doc.addEventListener("click", navigate, true);
       cleanupNavigation = () => doc.removeEventListener("click", navigate, true);
       const sync = () => {
+        const footerMenu = doc.querySelector('footer nav[aria-label="Navegação do site"] ul');
+        if (footerMenu && !footerMenu.querySelector('[data-float-footer-link]')) {
+          const items = [
+            { label: "Docs", href: "http://docs.floatdesks.com/" },
+            { label: "Market", href: "/market" },
+            { label: "Top 200", href: "/top200" },
+            { label: "Launchpad", href: "https://app.floatdesks.com/" },
+            { label: "Announcements", href: "/announcements" },
+            { label: "Liquidity Aggregator", href: "https://app.floatdesks.com/liquidity" },
+          ].map(({ label, href }) => {
+            const item = doc.createElement("li");
+            item.className = "Footer_footer__link__yPj39";
+            const link = doc.createElement(href ? "a" : "span");
+            link.dataset.floatFooterLink = "true";
+            link.className = "btn btn--secondary text-white";
+            if (href) link.setAttribute("href", href);
+            const text = doc.createElement("span");
+            text.className = "label hover-effect hover-effect--cursor-square";
+            text.textContent = label;
+            link.append(text);
+            item.append(link);
+            return item;
+          });
+          footerMenu.replaceChildren(...items);
+          const footerNavigation = footerMenu.parentElement;
+          if (footerNavigation && !footerNavigation.querySelector("[data-float-twitter-column]")) {
+            footerNavigation.classList.add("float-footer-columns");
+            const twitterColumn = doc.createElement("ul");
+            twitterColumn.dataset.floatTwitterColumn = "true";
+            const item = doc.createElement("li");
+            item.className = "Footer_footer__link__yPj39";
+            const twitter = doc.createElement("span");
+            twitter.dataset.floatFooterLink = "true";
+            twitter.className = "btn btn--secondary text-white";
+            twitter.textContent = "Twitter";
+            item.append(twitter);
+            twitterColumn.append(item);
+            footerNavigation.append(twitterColumn);
+          }
+        }
         const aboutNumber = doc.querySelector(".section--about .SectionLabel_sectionLabel__index__lvtR0");
         if (aboutNumber && aboutNumber.textContent !== "04") aboutNumber.textContent = "04";
         const marketSectionNumber = doc.querySelector(".section--usability .SectionLabel_sectionLabel__index__lvtR0");
