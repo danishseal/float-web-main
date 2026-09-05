@@ -1,0 +1,15 @@
+{
+  "name": "Float",
+  "short_name": "Float",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/sailboat-white-300_1_1.png?v=3",
+      "sizes": "300x300",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}

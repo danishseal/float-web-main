@@ -19,3 +19,6 @@ body {
   display: block;
   border: 0;
 }
+
+.market-shell .mirror-frame { opacity: 0; pointer-events: none; }
+.market-shell .mirror-frame[data-ready="true"] { opacity: 1; pointer-events: auto; }

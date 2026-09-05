@@ -1,0 +1,148 @@
+@font-face {
+  font-family: FloatNeueBit;
+  src: url('/dottxt/assets/fonts/neue-bit/NeueBit-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}
+
+/* Additions to the original announcements layout; its shell stays untouched. */
+.float-market-page .AnnouncementsList_announcementsList__listWrapper__aigtX:not(#float-market-content),
+.float-market-page .AnnouncementsList_announcementsList__loadMore__5RPZv { display: none; }
+#float-market-content { opacity: 1; }
+.float-content { padding-bottom: 3rem; }
+.float-intro { margin-bottom: 2rem; }
+.float-muted { color: #747474; font-size: 1rem; }
+.float-intro .float-muted { margin-top: .75rem; }
+.float-toolbar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 3rem; }
+.float-filters { display: flex; flex-wrap: wrap; gap: 1rem; }
+.float-filters button { color: #747474; padding-bottom: .35rem; border-bottom: 1px solid transparent; }
+.float-filters button[aria-pressed="true"] { color: #000; border-color: #000; }
+.float-filters sup { font-size: .65em; }
+.float-search { display: flex; border-bottom: 1px solid #999; padding-bottom: .35rem; }
+.float-search input { background: transparent; min-width: 0; width: 10rem; }
+.float-content button { cursor: pointer; }
+.float-content :is(button,input):focus-visible { outline: 2px solid #7f9acf; outline-offset: 4px; }
+.float-article { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); width: 100%; text-align: left; }
+.float-company-title { display: block; text-decoration: underline; }
+.float-article:hover .float-company-title { text-decoration: none; }
+.float-quote { display: flex; align-items: baseline; gap: 1.5rem; margin-top: 1rem; font-variant-numeric: tabular-nums; }
+.float-positive { color: #37664c; }
+.float-negative { color: #a44940; }
+.float-quote small { color: #747474; font-size: .75rem; }
+.float-expand { margin-left: auto; }
+.float-detail { margin: 1.5rem 0 0 33.333%; }
+.float-detail-meta { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5rem; font-size: .85rem; color: #747474; }
+.float-detail .chart { width: 100%; height: 180px; margin: 1rem 0; color: #111; }
+.float-detail p { margin-top: 1rem; }
+.float-list-footer { display: flex; justify-content: space-between; gap: 1rem; margin-top: 3rem; font-size: .9rem; }
+.float-list-footer button { text-decoration: underline; }
+.float-notes { margin-top: 4rem; }
+.float-notes h2 { margin-bottom: 1.25rem; }
+.float-notes p { margin-bottom: 1rem; }
+.float-oracle { display: flex; justify-content: space-between; gap: 1rem; margin-bottom: .75rem; }
+.float-disclaimer { color: #747474; font-size: .85rem; margin-top: 3rem; }
+@media (max-width: 767px) {
+  .float-detail { margin-left: 0; }
+  .float-quote { flex-wrap: wrap; gap: .75rem; }
+  .float-search, .float-search input { width: 100%; }
+}
+
+/* Always show the price history beside the company copy. The row's plus
+   continues to expand the full chart below, without changing the article grid. */
+.float-company-summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 112px;
+  column-gap: 1.5rem;
+}
+.float-company-summary > .PostPreview_postPreview__title__c1oda,
+.float-company-summary > .PostPreview_postPreview__excerpt__pDb2h,
+.float-company-summary > .float-quote { grid-column: 1; }
+.float-mini-chart {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  gap: .75rem;
+}
+.float-mini-chart .chart {
+  display: block;
+  width: 90px;
+  height: 38px;
+  color: #111;
+}
+.float-mini-chart .float-expand { font-size: 1.1rem; }
+@media (max-width: 767px) {
+  .float-company-summary { grid-template-columns: minmax(0, 1fr) 86px; column-gap: .75rem; }
+  .float-mini-chart { gap: .5rem; }
+  .float-mini-chart .chart { width: 64px; height: 32px; }
+}
+
+/* Keep the original announcements scrollbar on its original scroll container. */
+#main-content {
+  scrollbar-gutter: stable;
+  scrollbar-width: auto;
+  scrollbar-color: auto;
+}
+#main-content::-webkit-scrollbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: .5rem;
+  background-color: #fff;
+  box-sizing: content-box;
+}
+#main-content::-webkit-scrollbar-track {
+  border: .0625rem solid #000;
+  background-color: transparent;
+}
+#main-content::-webkit-scrollbar-thumb {
+  background-color: #000;
+}
+
+.float-chart-source { display: flex; gap: 1.25rem; margin-bottom: 1.25rem; }
+.float-chart-source button { padding: .4rem 0; border-bottom: 1px solid transparent; color: #747474; font-size: .9rem; }
+.float-chart-source button[aria-pressed="true"] { border-color: #000; color: #000; }
+.float-detail-tradingview { margin-left: 0; }
+/* The embed injects inline sizing; keep its entire iframe chain at the
+   expanded height instead of allowing the browser's 150px iframe default. */
+.float-tv-chart .float-tv-container {
+  height: 520px !important;
+  min-height: 520px;
+  width: 100% !important;
+}
+.float-tv-container > .tradingview-widget-container__widget,
+.float-tv-container iframe {
+  display: block;
+  height: 100% !important;
+  min-height: 100%;
+  width: 100% !important;
+  border: 0;
+}
+.float-tv-chart .tradingview-widget-copyright { display: flex; align-items: baseline; gap: .3em; }
+.float-tv-chart .tradingview-widget-copyright a { display: inline; }
+.float-tv-chart .tradingview-widget-copyright { font-size: .8rem; margin-top: .5rem; }
+.float-tv-chart .tradingview-widget-copyright a { color: #2563eb; text-decoration: underline; }
+.float-tv-chart .float-tv-note { font-size: .8rem; line-height: 1.5; }
+@media (max-width: 767px) { .float-tv-chart .float-tv-container { height: 400px !important; min-height: 400px; } }
+
+.float-live-quote { width: 100%; min-width: 0; padding: 0 0 24px; }
+.float-live-quote .tradingview-widget-container { min-height: 180px; width: 100%; }
+.float-live-quote .tradingview-widget-copyright { font-size: 12px; color: #777; padding-top: 8px; }
+
+.float-sparkline { display: block; width: 90px; height: 38px; flex: 0 0 90px; }
+.float-sparkline-status { display: flex; align-items: center; height: 100%; color: #747474; font-size: .65rem; }
+@media (max-width: 767px) { .float-sparkline { width: 64px; height: 32px; flex-basis: 64px; } }
+
+/* Market content uses the homepage shell without changing its header. */
+.float-market-view #main-content-inner > :not(#float-market-page-root):not(footer):not(:has(footer)) { display: none !important; }
+.float-market-view #main-content { overflow-y: auto !important; }
+.float-market-view #main-content-inner { transform: none !important; }
+#float-market-page-root h1 { opacity: 1; }
+#float-market-page-root .AnnouncementsList_announcementsList__title--border__hbmBM { border-color: #000; }
+
+.float-line-chart .float-sparkline { width: 100%; height: 260px; }
+.float-line-chart .float-sparkline .chart { display: block; width: 100%; height: 260px; margin: 0; }
+.float-line-chart .float-sparkline-status { display: flex; align-items: center; justify-content: center; height: 100%; }
