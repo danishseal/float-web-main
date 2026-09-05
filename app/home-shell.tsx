@@ -25,7 +25,7 @@ export default function HomeShell({ view }: { view?: "markets" | "top200" | "ann
         if (!link || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
         const url = new URL(link.href, doc.baseURI);
         if (url.origin !== window.location.origin) return;
-        if (["/", "/market", "/top200", "/Market", "/Top-100", "/announcements"].includes(url.pathname) || (view && url.hash)) {
+        if (["/", "/market", "/top200", "/Market", "/announcements"].includes(url.pathname) || (view && url.hash)) {
           event.preventDefault();
           event.stopPropagation();
           window.location.assign(view && url.hash ? `/${url.hash}` : url.pathname + url.search + url.hash);
@@ -72,6 +72,27 @@ export default function HomeShell({ view }: { view?: "markets" | "top200" | "ann
         doc.querySelectorAll(".section--use-cases .UseCasesSection_useCases__indexPrimary__SsC8P").forEach(index => {
           if (index.textContent !== "03.") index.textContent = "03.";
         });
+        const dropdownButton = doc.querySelector<HTMLButtonElement>('button[aria-haspopup="true"]');
+        const dropdownLabelCharacters = dropdownButton?.querySelectorAll<HTMLElement>(".scramble-label > span");
+        Array.from("Explore").forEach((character, index) => {
+          const span = dropdownLabelCharacters?.[index];
+          if (span && span.textContent !== character) span.textContent = character;
+        });
+        const dropdownMenuId = dropdownButton?.getAttribute("aria-controls");
+        if (dropdownMenuId) doc.getElementById(dropdownMenuId)?.setAttribute("aria-label", "Explore");
+        const marketShortcut = doc.querySelector<HTMLElement>('a[href="/market"] .key');
+        if (marketShortcut && marketShortcut.textContent !== "M") marketShortcut.textContent = "M";
+        const top200Link = doc.querySelector<HTMLAnchorElement>('a[href="/Top-100"], a[href="/top100"]');
+        if (top200Link) {
+          top200Link.href = "/top200";
+          const key = top200Link.querySelector<HTMLElement>(".key");
+          if (key && key.textContent !== "2") key.textContent = "2";
+          const labelCharacters = top200Link.querySelectorAll<HTMLElement>(".label > span");
+          Array.from("Top 200").forEach((character, index) => {
+            const span = labelCharacters[index];
+            if (span && span.textContent !== character) span.textContent = character;
+          });
+        }
         if (view) {
           if (!doc.getElementById("float-page-styles")) {
             const css = doc.createElement("link");
