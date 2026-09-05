@@ -1,0 +1,290 @@
+[
+ {
+  "symbol": "fARAMCO",
+  "company": "Saudi Aramco",
+  "homeLine": "2222.SR",
+  "universeTicker": "2222.SR",
+  "capB": 1687,
+  "address": "0x29C17Bc60540879aCB398A2219204d3c94C07e09"
+ },
+ {
+  "symbol": "fSAMSUNG",
+  "company": "Samsung Electronics",
+  "homeLine": "005930.KS",
+  "universeTicker": "005930.KS",
+  "capB": 1251,
+  "address": "0xc133F5aF72e9a1dA5E0E6681fBD965AF5144830b"
+ },
+ {
+  "symbol": "fTENCENT",
+  "company": "Tencent Holdings",
+  "homeLine": "0700.HK",
+  "universeTicker": "TCEHY",
+  "capB": 510,
+  "address": "0xee772c4168eDf2E22c534C04cD077d17eb998DDa"
+ },
+ {
+  "symbol": "fROCHE",
+  "company": "Roche Holding",
+  "homeLine": "RO.SW",
+  "universeTicker": "RO.SW",
+  "capB": 351,
+  "address": "0x5BAcf98Bc9A3d86BD40D640da57581c7E03AC7Af"
+ },
+ {
+  "symbol": "fICBC",
+  "company": "ICBC",
+  "homeLine": "1398.HK",
+  "universeTicker": "1398.HK",
+  "capB": 349,
+  "address": "0xa44F29B335dF89C9cf284909dD4F53B78912C619"
+ },
+ {
+  "symbol": "fNOVARTIS",
+  "company": "Novartis",
+  "homeLine": "NOVN.SW",
+  "universeTicker": "NVS",
+  "capB": 307,
+  "address": "0xc3A9e5D6068D686796a05e1162D0613a0665ed7f"
+ },
+ {
+  "symbol": "fMUFG",
+  "company": "Mitsubishi UFJ",
+  "homeLine": "8306.T",
+  "universeTicker": "MUFG",
+  "capB": 260,
+  "address": "0xA7012753F6427e2d0901D7161feD1141Bf2624b0"
+ },
+ {
+  "symbol": "fLVMH",
+  "company": "LVMH",
+  "homeLine": "MC.PA",
+  "universeTicker": "MC.PA",
+  "capB": 256,
+  "address": "0x8283d8467E450F64233a9B080fD6886A1Cdf7601"
+ },
+ {
+  "symbol": "fSIEMENS",
+  "company": "Siemens",
+  "homeLine": "SIE.DE",
+  "universeTicker": "SIE.DE",
+  "capB": 254,
+  "address": "0xD8931b9D0eAe17a0d48d297e9bFaD194888E36aC"
+ },
+ {
+  "symbol": "fSAP",
+  "company": "SAP",
+  "homeLine": "SAP.DE",
+  "universeTicker": "SAP",
+  "capB": 250,
+  "address": "0xE7Eb9678B5f3a8BA37eC6C997631084c69c7a6e2"
+ },
+ {
+  "symbol": "fNESTLE",
+  "company": "Nestle",
+  "homeLine": "NESN.SW",
+  "universeTicker": "NESN.SW",
+  "capB": 249,
+  "address": "0x89AD9cD94f6437b3e0bE2104E3090985eDF36e04"
+ },
+ {
+  "symbol": "fCATL",
+  "company": "CATL",
+  "homeLine": "300750.SZ",
+  "universeTicker": "300750.SZ",
+  "capB": 247,
+  "address": "0xADcBb1e2e4b661E12AFA533f59A0fBf61AAe4436"
+ },
+ {
+  "symbol": "fMOUTAI",
+  "company": "Kweichow Moutai",
+  "homeLine": "600519.SS",
+  "universeTicker": "600519.SS",
+  "capB": 242,
+  "address": "0xdedbbBc53ae643Ed4E90ad469B22D084bc656625"
+ },
+ {
+  "symbol": "fPETROCHINA",
+  "company": "PetroChina",
+  "homeLine": "0857.HK",
+  "universeTicker": "0857.HK",
+  "capB": 238,
+  "address": "0x14441fc428f56928FBc4bce3F4B932c85aC6c84F"
+ },
+ {
+  "symbol": "fTOYOTA",
+  "company": "Toyota Motor",
+  "homeLine": "7203.T",
+  "universeTicker": "TM",
+  "capB": 236,
+  "address": "0x78FAE28B954b4F3D7d1f654B39B361BCc3E5C3b5"
+ },
+ {
+  "symbol": "fLOREAL",
+  "company": "L'Oreal",
+  "homeLine": "OR.PA",
+  "universeTicker": "OR.PA",
+  "capB": 236,
+  "address": "0xE2ce8Dd8Cb41eE09a429fA85725aFc36B693ec75"
+ },
+ {
+  "symbol": "fINDITEX",
+  "company": "Inditex",
+  "homeLine": "ITX.MC",
+  "universeTicker": "ITX.MC",
+  "capB": 207,
+  "address": "0xDEB914F72eE25a38B83433A2Ce462b4fE481fD29"
+ },
+ {
+  "symbol": "fNOVO",
+  "company": "Novo Nordisk",
+  "homeLine": "NOVO-B.CO",
+  "universeTicker": "NVO",
+  "capB": 202,
+  "address": "0x1CD17977EB08D54178c8F79fD9a9BDCC208b6C87"
+ },
+ {
+  "symbol": "fSKHYNIX",
+  "company": "SK Hynix",
+  "homeLine": "000660.KS",
+  "universeTicker": "000660.KS",
+  "capB": 202,
+  "address": "0xDCC02Fb25E08268699b7021e3F0F456A27bed8A2"
+ },
+ {
+  "symbol": "fALLIANZ",
+  "company": "Allianz",
+  "homeLine": "ALV.DE",
+  "universeTicker": "ALV.DE",
+  "capB": 198,
+  "address": "0x92ee4c7e5d48b5C91be34B032Ae65a3fD9d49afD"
+ },
+ {
+  "symbol": "fTOTAL",
+  "company": "TotalEnergies",
+  "homeLine": "TTE.PA",
+  "universeTicker": "TTE",
+  "capB": 198,
+  "address": "0xcE3D99aA6EAD10B1f8B0AB4e6d5CdB29a38EB991"
+ },
+ {
+  "symbol": "fPROSUS",
+  "company": "Prosus",
+  "homeLine": "PRX.AS",
+  "universeTicker": "PRX.AS",
+  "capB": 190,
+  "address": "0x62d3004761FcD9D2f9DCF5e1c40697C341dC4eE8"
+ },
+ {
+  "symbol": "fSCHNEIDER",
+  "company": "Schneider Electric",
+  "homeLine": "SU.PA",
+  "universeTicker": "SU.PA",
+  "capB": 188,
+  "address": "0x1164c58D891664f0DF2775141096BB29Bc6dFaE5"
+ },
+ {
+  "symbol": "fSOFTBANK",
+  "company": "SoftBank Group",
+  "homeLine": "9984.T",
+  "universeTicker": "9984.T",
+  "capB": 187,
+  "address": "0x6674Ef23BB5B0fefd8C3b83793020BC90f5c4817"
+ },
+ {
+  "symbol": "fHERMES",
+  "company": "Hermes International",
+  "homeLine": "RMS.PA",
+  "universeTicker": "RMS.PA",
+  "capB": 187,
+  "address": "0xDf5B12fe3F66e2Bf85A99B4444d7689fBb4f2EEb"
+ },
+ {
+  "symbol": "fAIRBUS",
+  "company": "Airbus",
+  "homeLine": "AIR.PA",
+  "universeTicker": "AIR.PA",
+  "capB": 180,
+  "address": "0x5a176Db5DB5bc4670570D17bF3e61CfB333BAAF1"
+ },
+ {
+  "symbol": "fKIOXIA",
+  "company": "KIOXIA",
+  "homeLine": "285A.T",
+  "universeTicker": "285A.T",
+  "capB": 174,
+  "address": "0xEF299E0248Fcb58fCc3Bc3777dB6349301bC3Be3"
+ },
+ {
+  "symbol": "fABB",
+  "company": "ABB",
+  "homeLine": "ABBN.SW",
+  "universeTicker": "ABBN.SW",
+  "capB": 174,
+  "address": "0x69fe0E6eAb6b59485C92d5de18900787D442FaB3"
+ },
+ {
+  "symbol": "fCMBANK",
+  "company": "CM Bank",
+  "homeLine": "3968.HK",
+  "universeTicker": "3968.HK",
+  "capB": 166,
+  "address": "0xe5592cCD5371229c7e16Db1297C30Ef9CB2e8EC4"
+ },
+ {
+  "symbol": "fROLLSROYCE",
+  "company": "Rolls-Royce",
+  "homeLine": "RR.L",
+  "universeTicker": "RR.L",
+  "capB": 164,
+  "address": "0x98E769Ce88f19B0591994664828462761fd51520"
+ },
+ {
+  "symbol": "fTOKYOELEC",
+  "company": "Tokyo Electron",
+  "homeLine": "8035.T",
+  "universeTicker": "8035.T",
+  "capB": 156,
+  "address": "0x05A5d55a5f20e690372d3DFa55978D211E9F3C90"
+ },
+ {
+  "symbol": "fHITACHI",
+  "company": "Hitachi",
+  "homeLine": "6501.T",
+  "universeTicker": "6501.T",
+  "capB": 155,
+  "address": "0x27e186dFc8Eed418D28Ca56851C3a6b0e17cE339"
+ },
+ {
+  "symbol": "fSONY",
+  "company": "Sony Group",
+  "homeLine": "6758.T",
+  "universeTicker": "SONY",
+  "capB": 146,
+  "address": "0x965fc10c64620b7c653E27b6B09831898ca502D9"
+ },
+ {
+  "symbol": "fFASTRETAIL",
+  "company": "Fast Retailing",
+  "homeLine": "9983.T",
+  "universeTicker": "9983.T",
+  "capB": 137,
+  "address": "0x09d6709d590c48B5256e5fCe796ad9d61b0f7651"
+ },
+ {
+  "symbol": "fKEYENCE",
+  "company": "Keyence",
+  "homeLine": "6861.T",
+  "universeTicker": "6861.T",
+  "capB": 125,
+  "address": "0x2e688F91BC404FD105ABAcD81B1a615e9492881D"
+ },
+ {
+  "symbol": "fCAMBRICON",
+  "company": "Cambricon Technologies",
+  "homeLine": "688256.SS",
+  "universeTicker": null,
+  "capB": 104,
+  "address": "0x7455B384B27a2aeb98C136BDDDab7F42a91a892d"
+ }
+]

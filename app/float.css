@@ -82,3 +82,21 @@
 .fl-btn:hover { background: var(--blue); border-color: var(--blue); }
 .fl-btn--ghost { background: transparent; color: var(--ink); }
 .fl-btn--ghost:hover { background: var(--ink); color: var(--cream); }
+
+/* The contract behind a Float market, shown when a row is expanded. The whole
+   address is printed rather than a truncation, because the reason it is here is
+   so somebody can check the market exists on chain, and half an address checks
+   nothing. */
+.float-contract {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+  margin: 14px 0 0;
+  font-size: 13px;
+  opacity: 0.72;
+}
+.float-contract a {
+  word-break: break-all;
+  text-decoration: underline;
+}
